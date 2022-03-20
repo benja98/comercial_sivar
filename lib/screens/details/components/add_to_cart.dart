@@ -22,8 +22,8 @@ class AddToCart extends StatelessWidget {
         children: <Widget>[
           Container(
             margin: EdgeInsets.only(right: kDefaultPaddin),
-            height: 50,
-            width: 58,
+            height: 40,
+            width: 40,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(10),
               border: Border.all(
@@ -40,16 +40,16 @@ class AddToCart extends StatelessWidget {
           ),
           Expanded(
             child: SizedBox(
-              height: 50,
+              height: 35,
               child: FlatButton(
                 shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(18)),
+                    borderRadius: BorderRadius.circular(15)),
                 color: product.color,
                 onPressed: () {},
                 child: Text(
                   "Comprar".toUpperCase(),
                   style: TextStyle(
-                    fontSize: 17,
+                    fontSize: 15,
                     fontWeight: FontWeight.bold,
                     color: Colors.white,
                   ),

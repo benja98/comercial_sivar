@@ -28,18 +28,7 @@ class ProductTitleWithImage extends StatelessWidget {
           SizedBox(height: 1),
           Row(
             children: <Widget>[
-              RichText(
-                text: TextSpan(
-                  children: [
-                    TextSpan(
-                      text: "\$${product.price}",
-                      style: Theme.of(context).textTheme.headline4.copyWith(
-                          color: Colors.white, fontWeight: FontWeight.bold),
-                    ),
-                  ],
-                ),
-              ),
-              SizedBox(width: 90),
+              SizedBox(width: 200),
               Expanded(
                 child: Hero(
                   tag: "${product.id}",

@@ -59,3 +59,34 @@ class Body extends StatelessWidget {
     );
   }
 }
+
+class OrientationList extends StatelessWidget {
+  final String title;
+
+  OrientationList({Key key, this.title}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: Text(title)),
+      body: OrientationBuilder(
+        builder: (context, orientation) {
+          return GridView.count(
+            // Crea una grid con 2 columnas en modo portrait o 3 columnas en
+            // modo landscape.
+            crossAxisCount: orientation == Orientation.portrait ? 2 : 3,
+            // Genera 100 Widgets que muestran su índice en la Lista
+            children: List.generate(80, (index) {
+              return Center(
+                child: Text(
+                  'Item $index',
+                  style: Theme.of(context).textTheme.headline1,
+                ),
+              );
+            }),
+          );
+        },
+      ),
+    );
+  }
+}
