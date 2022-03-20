@@ -23,11 +23,11 @@ class ColorAndSize extends StatelessWidget {
               Row(
                 children: <Widget>[
                   ColorDot(
-                    color: Color(0xFF356C95),
+                    color: Color.fromARGB(255, 0, 161, 40),
                     isSelected: true,
                   ),
-                  ColorDot(color: Color(0xFFF8C078)),
-                  ColorDot(color: Color(0xFFA29B9B)),
+                  ColorDot(color: Color.fromARGB(255, 185, 113, 19)),
+                  ColorDot(color: Color.fromARGB(255, 180, 0, 0)),
                 ],
               ),
             ],
@@ -38,9 +38,9 @@ class ColorAndSize extends StatelessWidget {
             text: TextSpan(
               style: TextStyle(color: kTextColor),
               children: [
-                TextSpan(text: "Size\n"),
+                TextSpan(text: "Precio\n "),
                 TextSpan(
-                  text: "${product.size} cm",
+                  text: "${product.price} USD",
                   style: Theme.of(context)
                       .textTheme
                       .headline5
@@ -69,8 +69,8 @@ class ColorDot extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: EdgeInsets.only(
-        top: kDefaultPaddin / 4,
-        right: kDefaultPaddin / 2,
+        top: kDefaultPaddin / 20,
+        right: kDefaultPaddin / 20,
       ),
       padding: EdgeInsets.all(2.5),
       height: 24,

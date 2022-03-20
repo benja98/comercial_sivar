@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 
 class Product {
   final String image, title, description;
-  final int price, size, id;
+  final int size, id;
+  final double price;
   final Color color;
   Product({
     this.id,
@@ -18,37 +19,37 @@ class Product {
 List<Product> products = [
   Product(
       id: 1,
-      title: "Silla de madera verde",
-      price: 234,
-      size: 12,
+      title: "Silla guanaca",
+      price: 24.99,
+      size: 6,
       description: dummyText,
       image: "assets/images/Grupo 1.png",
       color: Color(0xFF3D82AE)),
   Product(
       id: 2,
-      title: "Silla de madera cafe",
-      price: 234,
+      title: "Silla guanaca",
+      price: 24.99,
       size: 8,
       description: dummyText,
       image: "assets/images/Grupo 2.png",
-      color: Color(0xFFD3A984)),
+      color: Color(0xFF3D82AE)),
   Product(
       id: 3,
-      title: "Silla de madera roja",
-      price: 234,
+      title: "Silla guanaca",
+      price: 24.99,
       size: 10,
       description: dummyText,
       image: "assets/images/Grupo 3.png",
-      color: Color(0xFF989493)),
+      color: Color(0xFF3D82AE)),
   Product(
       id: 4,
-      title: "Silla de madera gris",
-      price: 234,
+      title: "Silla guanaca",
+      price: 24.99,
       size: 11,
       description: dummyText,
       image: "assets/images/Grupo 4.png",
-      color: Color(0xFFE6B398)),
+      color: Color(0xFF3D82AE)),
 ];
 
 String dummyText =
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since. When an unknown printer took a galley.";
+    "descripcion de nuestro producto, realizando en el parcial de la asignatura Electiva Profesional de Software 3 ciclo #1, año 2022.";
