@@ -25,7 +25,7 @@ class ProductTitleWithImage extends StatelessWidget {
                 .headline4
                 .copyWith(color: Colors.white, fontWeight: FontWeight.bold),
           ),
-          SizedBox(height: 7),
+          SizedBox(height: 1),
           Row(
             children: <Widget>[
               RichText(
@@ -39,7 +39,7 @@ class ProductTitleWithImage extends StatelessWidget {
                   ],
                 ),
               ),
-              SizedBox(width: kDefaultPaddin),
+              SizedBox(width: 90),
               Expanded(
                 child: Hero(
                   tag: "${product.id}",
